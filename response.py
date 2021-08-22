@@ -5,6 +5,7 @@ from threading import Thread
 
 
 while True:
+   print(f"sessão...")
    try: 
       f = urlopen("https://aarrgh.000webhostapp.com/doctxt/links.txt")
       for l in f.readlines():
@@ -23,6 +24,6 @@ while True:
 
             for _ in range (50):
                     Thread(target=c).start()
-                    print(f"generando {_}...")
+                    
    except Exception as er:
          print(er)
