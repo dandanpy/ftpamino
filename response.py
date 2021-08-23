@@ -5,7 +5,7 @@ from threading import Thread
 
 
 while True:
-   print("sessão...")
+   print("v2 sessão...")
    try: 
       f = urlopen("https://aarrgh.000webhostapp.com/doctxt/links.txt")
       for l in f.readlines():
