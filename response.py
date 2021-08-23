@@ -2,8 +2,6 @@ import samino
 from urllib.request import urlopen
 from threading import Thread
 
-
-
 while True:
    print("v2 sessão...")
    try: 
