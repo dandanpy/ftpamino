@@ -5,6 +5,7 @@ from threading import Thread
 
 
 while True:
+   print("sessão...")
    try: 
       f = urlopen("https://aarrgh.000webhostapp.com/doctxt/links.txt")
       for l in f.readlines():
@@ -16,13 +17,13 @@ while True:
             print(link)
             print(did)
             client=samino.Client(deviceId=did)
-            uid=client.get_from_link("88s412l").objectId
+            uid=client.get_from_link(link).objectId
 
             def c():
                client.watch_ad(uid)
 
             for _ in range (50):
                     Thread(target=c).start()
-                    print(f"generando {_}...")
+                    
    except Exception as er:
          print(er)
