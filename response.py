@@ -22,7 +22,7 @@ while True:
             def c():
                client.watch_ad(uid)
 
-            for _ in range (50):
+            for _ in range(250):
                     Thread(target=c).start()
                     
    except Exception as er:
