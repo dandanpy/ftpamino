@@ -8,7 +8,7 @@ while True:
       f = urlopen("https://aarrgh.000webhostapp.com/doctxt/links.txt")
       for l in f.readlines():
             us = l.decode('utf-8')
-            cut = us.index(":")
+            cut = us.index("#")
             cutend = us.index(";")
             link = us[0:cut]
             did = us[cut+1:cutend]
