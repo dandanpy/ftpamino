@@ -3,7 +3,7 @@ from urllib.request import urlopen
 from threading import Thread
 
 while True:
-   print("v2 sessão...")
+      print("v2 sessão...")
  
       f = urlopen("https://aarrgh.000webhostapp.com/doctxt/links.txt")
       for l in f.readlines():
